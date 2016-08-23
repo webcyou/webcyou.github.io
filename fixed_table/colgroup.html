@@ -3,7 +3,7 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <title>Fixed Table JS</title>
+    <title>Fixed Table JS | colgroup</title>
     <link href="./css/style.css" rel="stylesheet" type="text/css" media="screen" />
     <script   src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
     <script src="./js/fixed_table.js"></script>
@@ -15,6 +15,9 @@
         </li>
         <li>
             <a href="./colgroup.html">colgroup</a>
+        </li>
+        <li>
+            <a href="./callback.html">callback</a>
         </li>
     </ul>
 
@@ -235,10 +238,10 @@
             $('.tableView').toggleClass('half');
 
             if($('.tableView').hasClass('half')) {
-                fixedTable.chengeMode(true);
+                fixedTable.changeMode(true);
                 setModeText('Half');
             } else {
-                fixedTable.chengeMode(false);
+                fixedTable.changeMode(false);
                 resetCSSClass();
             }
         });
@@ -249,10 +252,10 @@
             $('.tableView').toggleClass('full');
 
             if($('.tableView').hasClass('full')) {
-                fixedTable.chengeMode(true);
+                fixedTable.changeMode(true);
                 setModeText('Full');
             } else {
-                fixedTable.chengeMode(false);
+                fixedTable.changeMode(false);
                 resetCSSClass();
             }
         });
